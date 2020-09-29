@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "login-ng-45713": {
+      "hosting": {
+        "ExamenAngular": [
+          "login-ng-45713"
+        ]
+      }
+    }
+  }
+}
