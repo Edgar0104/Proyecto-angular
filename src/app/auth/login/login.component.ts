@@ -1,6 +1,7 @@
 import { Component,  } from '@angular/core';
 import {FormGroup, FormControl} from '@angular/forms';
 import {AuthService} from './../services/auth.service';
+
 import {Router} from '@angular/router';
 @Component({
   selector: 'app-login',
@@ -20,9 +21,9 @@ export class LoginComponent  {
     catch(error){console.log(error)}
     this.authSvc.loginGoogle();
   }
-  
+
   async onLogin(){
-    const{email, password}=this.loginForm.value;
+    const{ email, password}= this.loginForm.value;
     try{
       const user = await this.authSvc.login(email, password);
       this.authSvc.login(email, password);

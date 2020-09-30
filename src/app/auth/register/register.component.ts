@@ -12,7 +12,7 @@ export class RegisterComponent implements OnInit {
   registerForm=new FormGroup({
   email:new FormControl(''),
   password:new FormControl('')
-});
+  });
   constructor(private authSvc:AuthService, private router:Router) { }
 
   ngOnInit(): void {
