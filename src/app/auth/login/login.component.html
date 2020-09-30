@@ -2,33 +2,31 @@
     <div class="col-md-6 mx-auto mt-5">
       <div class="card">
         <div class="card-body">
-          <h1 class="text-center">LOGEO</h1>
+          <h1 class="text-center font-italic">INICIAR SESION</h1>
           <form formGroup="loginForm" (ngSubmit)="onLogin()">
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" class="form-control" formControlName="email"/>
+            <div class="form-group text-center font-italic">
+              <label for="email" class="center">Correo</label>
+              <input type="email" class="form-control text-center" formControlName="email"/>
             </div>
-            <div class="form-group">
-              <label for="password">Password</label>
+            <div class="form-group text-center font-italic">
+              <label for="password text-center">Contraseña</label>
               <input
-                type="password"
-                class="form-control"
-                formControlName="password"
+                type="password" class="form-control text-center" formControlName="password"
               />
             </div>
-            <button class="btn btn-primary btn-lg btn-block">
-              Login
+            <button class="btn bg-gradient-dark btn-lg btn-block text-center font-italic">
+              Iniciar Sesión
             </button>
           </form>
           <div class="form-group mt-3">
-            <button (click)="onGoogleLogin()" class="btn btn-lg btn-google">Google</button>
+            <button (click)="onGoogleLogin()" class="btn btn-lg btn-google font-italic">Iniciar con Google</button>
           </div>
-          <div class="form-group mt-3">
+          <div class="form-group mt-3 font-italic" >
             <p>
-              Crear una cuenta ? <a [routerLink]="['/register']"> Register </a>
+              Crear una cuenta ? <a [routerLink]="['/register']"> Registrar </a>
             </p>
           </div>
-          <div class="form-group mt-3">
+          <div class="form-group mt-3 font-italic">
             <p>
               Contraseña Olvidada ? <a href="/forgot-password"> Recordar Contraseña </a>
             </p>

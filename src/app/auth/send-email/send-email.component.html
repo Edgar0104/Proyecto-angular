@@ -1,5 +1,5 @@
 <div class="card mt-5" *ngIf="user$|async as user; else loading">
-    <div class="card-body">
+    <div class="card-body font font-italic">
         <h3 class="card-title text-center">
             Gracias Por Registrarte
         </h3>
@@ -11,8 +11,8 @@
                 Por favor revise su correo electronico.
             </P>
         </div>
-        <div class="form-group text-center">
-            <button class="btn btn-primary" (click)="onSendEmail()">Reenviar correo de verificacion</button>
+        <div class="form-group text-center font-italic">
+            <button class="btn bg-gradient-dark font-italic" (click)="onSendEmail()">Reenviar correo de verificacion</button>
         </div>
     </div>
 </div>
